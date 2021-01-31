@@ -1,0 +1,16 @@
+#ifndef HASHTABLE_HPP
+#define HASHTABLE_HPP
+#include "node.hpp"
+#include "filereader.hpp"
+#include <fstream>
+#include <iostream>
+class HashTable
+{
+	public:
+		HashTable();
+		void HashInsertion();
+		void passwordTester();
+	private:
+		Node** headPointers;	
+};
+#endif
