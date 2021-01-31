@@ -1,3 +1,12 @@
+/*******************************************
+ * Student Name: Tristan Stevens
+ * File Name: hashtable.hpp
+ * Project 1
+ *
+ * this class is used to create the hashtable
+ *
+ * *****************************************/
+
 #ifndef HASHTABLE_HPP
 #define HASHTABLE_HPP
 #include "node.hpp"

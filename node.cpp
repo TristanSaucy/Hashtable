@@ -1,3 +1,12 @@
+/*******************************************
+ * Student Name: Tristan Stevens
+ * File Name: node.cpp
+ * Project 1
+ *
+ *
+ *
+ * *****************************************/
+
 #include "node.hpp"
 
 Node::Node()

@@ -1,10 +1,19 @@
+/*******************************************
+ * Student Name: Tristan Stevens
+ * File Name: hashtable.cpp
+ * Project 1
+ *
+ *
+ *
+ * *****************************************/
+
 #include "hashtable.hpp"
 
 HashTable::HashTable()
 {
 	headPointers=new Node*[88001];
 }
-
+//there is no memory management in this code because it doesn't exist long enough to warrant it
 void HashTable::HashInsertion()
 {
 	std::ifstream input;
@@ -32,7 +41,7 @@ void HashTable::HashInsertion()
 		}
 		else
 		{
-			headPointers[hashPosition]=new Node(headPointers[hashPosition]); // I think this works, go back and check
+			headPointers[hashPosition]=new Node(headPointers[hashPosition]); // I like this line, its really tight code that does a lot
 		}
 		input>>name>>password;
 

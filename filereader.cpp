@@ -1,3 +1,12 @@
+/*******************************************
+ * Student Name: Tristan Stevens
+ * File Name: filereader.cpp
+ * Project 1
+ *
+ *
+ *
+ * *****************************************/
+
 #include "filereader.hpp"
 FileReader::FileReader()
 {

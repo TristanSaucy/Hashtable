@@ -1,3 +1,12 @@
+/*******************************************
+ * Student Name: Tristan Stevens
+ * File Name:filereader.hpp
+ * Project 1
+ *
+ *This class is used to read the files to generate new files
+ *
+ * *****************************************/
+
 #ifndef FILEREADER_HPP
 #define FILEREADER_HPP
 #include <string>
