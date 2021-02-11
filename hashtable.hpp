@@ -13,6 +13,7 @@
 #include "filereader.hpp"
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 class HashTable
 {
 	public:

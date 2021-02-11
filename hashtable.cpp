@@ -60,10 +60,11 @@ void HashTable::passwordTester()
 	int hashPosition;
 	Node* currentNode;
 	std::cout << "Legal" << std::endl;
+	std::cout << std::setw(15) << "UserID" << std::setw(10) << "Password" << std::setw(10) << "Result" <<std::endl;
 	for(int i = 0; i<5; i++)
 	{
 		rawInput>>rawName>>rawPassword;
-		std::cout << rawName <<" " <<rawPassword << " ";
+		std::cout <<std::setw(15)<< rawName <<std::setw(10)<<rawPassword << " ";
 		nameValue=0;
 		nameLength=rawName.length();
 		for(int j=0; j<nameLength;j++)
@@ -82,11 +83,11 @@ void HashTable::passwordTester()
 			{
 				if(currentNode->getPassword()==FileReader::passwordEncryptor(rawPassword))
 				{
-					std::cout <<"match"<<std::endl;
+					std::cout <<std::setw(10)<<"match"<<std::endl;
 				}
 				else
 				{
-					std::cout << "no match"<<std::endl;
+					std::cout <<std::setw(10) << "no match"<<std::endl;
 				}
 				break;
 			}
@@ -96,6 +97,8 @@ void HashTable::passwordTester()
 	rawInput.close();
 	rawInput.open("raw.txt");
 	std::cout <<"Illegal" << std::endl;
+	std::cout << std::setw(15) << "UserID" << std::setw(10) << "Password" << std::setw(10) << "Result" <<std::endl;
+
 	for(int i = 0; i<5; i++)
 	{
 		rawInput>>rawName>>rawPassword;
@@ -104,7 +107,7 @@ void HashTable::passwordTester()
 			rawPassword.at(0)='x';
 		}
 		else rawPassword.at(0)='q';
-		std::cout << rawName <<" " <<rawPassword << " ";
+		std::cout << std::setw(15)<<rawName<<std::setw(10)<< rawPassword << " ";
 		nameValue=0;
 		nameLength=rawName.length();
 		for(int j=0; j<nameLength;j++)
@@ -123,11 +126,11 @@ void HashTable::passwordTester()
 			{
 				if(currentNode->getPassword()==FileReader::passwordEncryptor(rawPassword))
 				{
-					std::cout <<"match"<<std::endl;
+					std::cout <<std::setw(10)<<"match"<<std::endl;
 				}
 				else
 				{
-					std::cout << "no match"<<std::endl;
+					std::cout <<std::setw(10)<< "no match"<<std::endl;
 				}
 				break;
 			}
